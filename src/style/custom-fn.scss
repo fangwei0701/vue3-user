@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+/******************** 动态生成margin padding *********************/
+@each $typeKey, $type in $spaceTypes {
+  @each $sizeKey, $size in $sizes {
+    @each $directionKey, $direction in $directions {
+      .#{$typeKey}#{$directionKey}-#{$sizeKey} {
+        #{$type}-#{$direction}: $size !important;
+      }
+    }
+    .#{$typeKey}x-#{$sizeKey} {
+      #{$type}-left: $size !important;
+      #{$type}-right: $size !important;
+    }
+    .#{$typeKey}y-#{$sizeKey} {
+      #{$type}-top: $size !important;
+      #{$type}-bottom: $size !important;
+    }
+  }
+}
+
+/******************** 动态生成text || border - color *************/
+@each $colorKey, $type in $colors {
+  .text-#{$colorKey} {
+    color: $type !important;
+  }
+  .border-#{$colorKey} {
+    border-color: $type !important;
+  }
+}
+
+/******************** 动态生成flex布局 ***************************/
+@each $key in $displayType {
+  .d-#{$key} { display: #{$key} !important; }
+}
+@each $key in (row, column, row-reverse, column-reverse) {
+  .flex-#{$key} {
+    flex-direction: #{$key} !important;
+  }
+}
+@each $key in (wrap, nowrap, wrap-reverse) {
+  .flex-#{$key} {
+    flex-wrap: #{$key} !important;
+  }
+}
+@each $key, $type in $alignItems {
+  .items-#{$key} {
+    align-items: #{$type} !important;
+  }
+}
+@each $key, $type in $justifyContent {
+  .justify-#{$key} {
+    justify-content: #{$type} !important;
+  }
+}

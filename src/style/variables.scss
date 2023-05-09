@@ -1,0 +1,105 @@
+// 颜色(灰色)
+$grey-1: #ffffff;
+$grey-2: #fafafa;
+$grey-3: #f5f5f5;
+$grey-4: #e8e8e8;
+$grey-5: #d9d9d9;
+$grey-6: #bfbfbf;
+$grey-7: #8c8c8c;
+$grey-8: #595959;
+$grey-9: #262626;
+$grey-10: #000000;
+
+// 颜色（彩色）
+$red-color: #d91623;
+$orange-color: #fa9a2a;
+$yellow-color: #ffc53d;
+$green-color: #26d145;
+$blue-color: #178ce6;
+// 提示色
+$primary-color: #178ce6;
+$info-color: #178ce6;
+$error-color: #d91623;
+$success-color: #26d145;
+$warning-color: #ffc53d;
+
+// 间距
+$layout-gutter: 8px;
+$xs: $layout-gutter * 0.5; // 4px
+$sm: $layout-gutter; // 8px
+$md: $layout-gutter * 2; // 16px
+$lg: $layout-gutter * 3; // 24px
+$xl: $layout-gutter * 4; // 32px
+$xxl: $layout-gutter * 6; // 48px
+
+/********************** margin，padding变量 **********************/
+$directions: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+);
+$spaceTypes: (
+  m: margin,
+  p: padding,
+);
+$sizes: (
+  0: 0,
+  xs: $xs,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl,
+);
+
+/********************** font || border - color变量 ***************/
+$colors: (
+  grey-1: $grey-1,
+  grey-2: $grey-2,
+  grey-3: $grey-3,
+  grey-4: $grey-4,
+  grey-5: $grey-5,
+  grey-6: $grey-6,
+  grey-7: $grey-7,
+  grey-8: $grey-8,
+  grey-9: $grey-9,
+  grey-10: $grey-10,
+  info: $info-color,
+  error: $error-color,
+  primary: $primary-color,
+  success: $success-color,
+  warning: $warning-color,
+  red-c: $red-color,
+  blue-c: $blue-color,
+  green-c: $green-color,
+  orange-c: $orange-color,
+  yellow-c: $yellow-color,
+);
+
+/********************** flex布局变量 *****************************/
+$displayType: (
+  none,
+  inline,
+  block,
+  inline-block,
+  table,
+  table-row,
+  table-cell,
+  flex,
+  inline-flex
+);
+$alignItems: (
+  stretch: stretch,
+  center: center,
+  start: flex-start,
+  end: flex-end,
+  baseline: baseline,
+);
+$justifyContent: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+);
