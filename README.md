@@ -1,12 +1,7 @@
-# Vue 3 + Vite
+## Vue 3 + Vite + Vant + TypeScript + Pinia +  Axios
 
-主要目录结构
+### 响应式实现：postcss-pxtorem + lib-flexible
 
-├── src
-│   ├── api            数据请求
-│   ├── assets         静态资源
-│   ├── components     组件
-│   ├── pages          页面
-│   ├── router         路由配置
-│   ├── store          vuex数据
-│   └── utils          工具函数
+### 国际化实现：vue-i18n
+
+
