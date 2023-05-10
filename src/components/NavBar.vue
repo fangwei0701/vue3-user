@@ -2,19 +2,19 @@
   <div class="nav-bar van-hairline--top">
     <ul class="d-flex">
       <router-link class="nav-item active" to="home">
-        <i><van-icon name="shopping-cart-o" /></i>
+        <i><van-icon name="wap-home-o" /></i>
         <span class="nav-title mt-xs norem">首页</span>
       </router-link>
-      <router-link class="nav-item" to="category">
-        <i><van-icon name="shopping-cart-o" /></i>
-        <span class="nav-title mt-xs norem">分类</span>
+      <router-link class="nav-item" to="attention">
+        <i><van-icon name="friends-o" /></i>
+        <span class="nav-title mt-xs norem">关注</span>
       </router-link>
-      <router-link class="nav-item" to="cart">
-        <i><van-icon name="shopping-cart-o" /></i>
-        <span class="nav-title mt-xs norem">购物车</span>
+      <router-link class="nav-item" to="message">
+        <i><van-icon name="chat-o" /></i>
+        <span class="nav-title mt-xs norem">消息</span>
       </router-link>
       <router-link class="nav-item" to="user">
-        <i><van-icon name="shopping-cart-o" /></i>
+        <i><van-icon name="user-circle-o" /></i>
         <span class="nav-title mt-xs">我的</span>
       </router-link>
     </ul>
